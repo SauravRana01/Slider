@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f0c29">
+  <title>BMW M5 Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="slider.js" defer></script>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1>BMW M5 Image Slider</h1>
+      <p>Vanilla JS • Hardware-accelerated • Infinite loop • Fully responsive</p>
+    </header>
+
+    <main>
+      <div class="slider" id="slider">
+
+        <div class="slider-viewport">
+          <div class="slider-track" id="sliderTrack">
+            <!-- Slides will be created by JavaScript -->
+          </div>
+        </div>
+
+        <button
+          class="nav-btn prev"
+          id="prevBtn"
+          type="button"
+          aria-label="Previous slide"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="28"
+            height="28"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <button
+          class="nav-btn next"
+          id="nextBtn"
+          type="button"
+          aria-label="Next slide"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="28"
+            height="28"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="dots" id="dots" aria-label="Choose a slide"></div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>Click arrows or dots • Seamless infinite looping</p>
+    </footer>
+
+  </div>
+</body>
+</html>
